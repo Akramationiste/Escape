@@ -1,0 +1,60 @@
+escape/
+├── public/
+│   ├── index.html
+│   ├── assets/
+│   │   ├── images/
+│   │   ├── css/
+│   │   └── js/
+├── src/
+│   ├── index.js
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   ├── Accueil.js
+│   │   ├── Destinations.js
+│   │   ├── Blog.js
+│   │   └── DestinationDetail.js
+│   ├── pages/
+│   │   ├── AccueilPage.js
+│   │   ├── DestinationsPage.js
+│   │   ├── BlogPage.js
+│   │   └── DestinationDetailPage.js
+│   ├── services/
+│   │   ├── destinationsService.js
+│   │   ├── blogService.js
+│   │   └── authService.js
+│   ├── utils/
+│   │   ├── api.js
+│   │   └── helpers.js
+│   ├── styles/
+│   │   ├── global.css
+│   │   ├── header.css
+│   │   ├── footer.css
+│   │   ├── accueil.css
+│   │   ├── destinations.css
+│   │   ├── blog.css
+│   │   └── destinationDetail.css
+│   └── assets/
+│       ├── images/
+│       ├── fonts/
+│       ├── icons/
+│       └── videos/
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+
+
+
+
+
+
+Explication de la structure :
+
+public/ contient le fichier HTML principal et les ressources statiques telles que les images, les feuilles de styles et les scripts JavaScript.
+src/ contient le code source du projet.
+index.js est le point d'entrée de l'application, qui initialise l'application et monte le composant principal dans l'élément racine de l'application.
+components/ contient les composants réutilisables de l'application, tels que le header et le footer.
+pages/ contient les pages de l'application, qui sont composées de plusieurs composants.
+services/ contient les fichiers qui communiquent avec l'API de l'agence de voyage pour récupérer les données des destinations et du blog.
+utils/ contient des fichiers utilitaires tels que
