@@ -251,14 +251,12 @@ input[type="checkbox"]{
 
 
 /* section place */
-
 .homecover{
   width: 100%;
-
-  left: 0%;
+  left: 0;
   right: 0;
-
 }
+
 .hmcvr{
   filter: blur(1px);
 }
@@ -275,25 +273,25 @@ input[type="checkbox"]{
   top: 35%;
   left: 20%;
   transform: translate(-50%, -50%);
-  font-size: 4em;
+  font-size: 4vw; /* change font size to be responsive based on viewport width */
   color:#ffffff; 
 }
 
 .nos {
   font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 60px;
-line-height: 73px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 6vw; /* change font size to be responsive based on viewport width */
+  line-height: 7.3vw; /* change line height to be responsive based on viewport width */
 }
 
 .homep {
   position: absolute;
   filter: none;
   top: 25%;
-  left: 20%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  font-size: 1em;
+  font-size: 1.7vw; /* change font size to be responsive based on viewport width */
   color:#ffffff; 
 }
 
@@ -570,7 +568,9 @@ hr {
   font-size: 5em;
   color:#030032; 
 }
-
+.titra {
+  font-weight:500;
+}
 
 
 
@@ -757,4 +757,72 @@ line-height: 73px;
 }
 .p {
   font-size:900px ;
+}
+
+.homemid {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.homemid__text {
+  position: absolute;
+  filter: none;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  color: #ffffff;
+}
+
+.nos {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+}
+
+.homepmid {
+  position: absolute;
+  filter: none;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .homemid__text {
+    font-size: 3em;
+    top: 30%;
+  }
+
+  .nos {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .homepmid {
+    font-size: 0.8em;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homemid__text {
+    font-size: 2em;
+    top: 25%;
+  }
+
+  .nos {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .homepmid {
+    font-size: 0.6em;
+    top: 45%;
+  }
 }
